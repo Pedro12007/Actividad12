@@ -14,7 +14,7 @@ while True:
 for i in range(n_students):
     student = []
     print(f'\nEstudiante #{i+1}')
-    name = input('Ingrese el nombre del usuario: ')
+    name = input('Ingrese el nombre del estudiante: ')
     student.append(name)
     while True:
         try:
@@ -38,4 +38,7 @@ for i in range(n_students):
             except Exception as e:
                 print('Un error ha ocurrido.', e)
                 print()
+    student.append(grades)
+    students.append(student)
 
+print(students)
